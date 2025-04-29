@@ -1,0 +1,256 @@
+{
+	"id": "f53db049-93c8-4d67-8597-aaeb827d5af0",
+	"name": "Restful API Assignment",
+	"timestamp": "2025-04-29T17:33:10.835Z",
+	"collection_id": "44329166-b9eefcd0-1977-4dd9-95c1-0d7864fb49b9",
+	"folder_id": 0,
+	"environment_id": "44329166-658d350b-6d8c-4d79-9cd4-d2b189e36d03",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-04-29T17:33:05.381Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "a18a5107-dbd7-4b9a-9092-bee8b835c51b",
+			"name": "List of objects by ids",
+			"url": "https://api.restful-api.dev/objects?id=3&id=5&id=10",
+			"time": 1074,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1074
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6460fdcb-e485-4eac-81d7-fc1747257d3b",
+			"name": "list of all objects",
+			"url": "https://api.restful-api.dev/objects",
+			"time": 389,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				389
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "070eaf1d-21a0-4ca0-9953-8587d1b20b56",
+			"name": "add new object",
+			"url": "https://api.restful-api.dev/objects",
+			"time": 429,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				429
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fda969bb-5579-4abd-bc22-b7cabcf78b92",
+			"name": "create new obj for put",
+			"url": "https://api.restful-api.dev/objects",
+			"time": 446,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				446
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0bf9146c-8ada-4ddd-918b-059075030c14",
+			"name": "create new obj by id",
+			"url": "https://api.restful-api.dev/objects/ff808181932badb6019673b9d79a6679",
+			"time": 350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Deliberate Fail Test": false
+			},
+			"testPassFailCounts": {
+				"Deliberate Fail Test": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				350
+			],
+			"allTests": [
+				{
+					"Deliberate Fail Test": false
+				}
+			]
+		},
+		{
+			"id": "19676b75-e8c1-4115-9b3b-973000f935c8",
+			"name": "check for update",
+			"url": "https://api.restful-api.dev/objects/ff808181932badb6019673b9d79a6679",
+			"time": 350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				350
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d832b134-17fa-4849-88d1-127138558e02",
+			"name": "update name",
+			"url": "https://api.restful-api.dev/objects/ff808181932badb6019673b9d79a6679",
+			"time": 389,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				389
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "84a5811b-78cb-4c08-a978-ad4168f388a2",
+			"name": "create second object",
+			"url": "https://api.restful-api.dev/objects",
+			"time": 401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				401
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "67d42afd-e0d5-4d3b-a132-c5fa9edf1c99",
+			"name": "delete second object",
+			"url": "https://api.restful-api.dev/objects/ff808181932badb60196780d63cb6e58",
+			"time": 438,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				438
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4266,
+	"collection": {
+		"requests": [
+			{
+				"id": "a18a5107-dbd7-4b9a-9092-bee8b835c51b",
+				"method": "GET"
+			},
+			{
+				"id": "6460fdcb-e485-4eac-81d7-fc1747257d3b",
+				"method": "GET"
+			},
+			{
+				"id": "070eaf1d-21a0-4ca0-9953-8587d1b20b56",
+				"method": "POST"
+			},
+			{
+				"id": "fda969bb-5579-4abd-bc22-b7cabcf78b92",
+				"method": "POST"
+			},
+			{
+				"id": "0bf9146c-8ada-4ddd-918b-059075030c14",
+				"method": "PUT"
+			},
+			{
+				"id": "19676b75-e8c1-4115-9b3b-973000f935c8",
+				"method": "GET"
+			},
+			{
+				"id": "d832b134-17fa-4849-88d1-127138558e02",
+				"method": "PATCH"
+			},
+			{
+				"id": "84a5811b-78cb-4c08-a978-ad4168f388a2",
+				"method": "POST"
+			},
+			{
+				"id": "67d42afd-e0d5-4d3b-a132-c5fa9edf1c99",
+				"method": "DELETE"
+			}
+		]
+	}
+}
